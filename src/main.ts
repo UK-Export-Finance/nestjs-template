@@ -1,12 +1,12 @@
 import { VersioningType, ValidationPipe } from '@nestjs/common';
 import { NestFactory, NestApplication } from '@nestjs/core';
 import { ConfigService } from '@nestjs/config';
-import { AppModule } from './app.module';
+import { MainModule } from './main.module';
 import { TransformInterceptor } from './helpers';
 import { SwaggerDocs } from './swagger';
 
 const main = async () => {
-  const app: NestApplication = await NestFactory.create(AppModule);
+  const app: NestApplication = await NestFactory.create(MainModule);
   const configService = app.get<ConfigService>(ConfigService);
 
   const env: string = configService.get<string>('app.env');

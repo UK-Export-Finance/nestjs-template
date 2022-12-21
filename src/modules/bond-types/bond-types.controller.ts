@@ -7,8 +7,7 @@ import { BondTypeEntity } from './entities/bond-types.entity';
 @ApiBearerAuth()
 @ApiTags('credit-risk-rating')
 export class BondTypeController {
-  private readonly creditRiskRating: BondTypeService;
-  // constructor() {}
+  constructor(private readonly creditRiskRating: BondTypeService) {}
 
   @Get()
   @Version('1')
