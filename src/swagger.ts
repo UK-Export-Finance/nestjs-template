@@ -37,6 +37,6 @@ export const SwaggerDocs = (app: NestApplication) => {
   SwaggerModule.setup(docPrefix, app, document, options);
 
   logger.log(`==========================================================`);
-  logger.log(`Docs will serve on ${docPrefix}`, 'NestApplication');
+  logger.log(`Docs will serve on ${docPrefix}`, 'NestDocs');
   logger.log(`==========================================================`);
 };

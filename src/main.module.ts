@@ -9,11 +9,10 @@ dotenv.config();
 
 @Module({
   imports: [
-    MdmModule,
     TypeOrmModule.forRoot({
       name: 'default',
       type: 'mssql',
-      host: 'localhost',
+      host: 'host.docker.internal',
       port: 1433,
       username: process.env.DB_USERNAME,
       password: process.env.DB_PASSWORD,

@@ -1,4 +1,4 @@
-import { VersioningType, ValidationPipe } from '@nestjs/common';
+import { VersioningType, ValidationPipe, Logger } from '@nestjs/common';
 import { NestFactory, NestApplication } from '@nestjs/core';
 import { ConfigService } from '@nestjs/config';
 import { MainModule } from './main.module';
@@ -8,6 +8,7 @@ import { SwaggerDocs } from './swagger';
 const main = async () => {
   const app: NestApplication = await NestFactory.create(MainModule);
   const configService = app.get<ConfigService>(ConfigService);
+  const logger = new Logger();
 
   const env: string = configService.get<string>('app.env');
   process.env.NODE_ENV = env;
@@ -37,8 +38,11 @@ const main = async () => {
 
   // Swagger docs
   SwaggerDocs(app);
-
   app.useGlobalInterceptors(new TransformInterceptor());
+
+  logger.log(`==========================================================`);
+  logger.log(`NestJS app will serve on port ${port}`, 'NestApplication');
+  logger.log(`==========================================================`);
   await app.listen(port);
 };
 
