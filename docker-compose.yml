@@ -1,0 +1,46 @@
+version: "3"
+services:
+  mssql:
+    container_name: mssql-server
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    ports:
+      - "1433:1433"
+    volumes:
+      - ./mssql:/usr/src/app
+    environment:
+      SA_PASSWORD: ${DB_PASSWORD}
+      ACCEPT_EULA: "Y"
+    working_dir: /usr/src/app
+    command: /bin/sh -c "./entrypoint.sh"
+
+  redis:
+    container_name: redis-cache
+    image: redis
+    ports:
+      - 6379:6379
+
+  api:
+    build:
+      dockerfile: Dockerfile
+      context: .
+      target: development
+    volumes:
+      - .:/usr/src/app
+    environment:
+      DB_USERNAME: ${DB_USERNAME}
+      DB_PASSWORD: ${DB_PASSWORD}
+      DB_DATABASE: ${DB_DATABASE}
+      SWAGGER_PASSWORD: ${SWAGGER_PASSWORD}
+      SWAGGER_USER: ${SWAGGER_USER}
+    command: npm run start:dev
+    ports:
+      - 3000:3000
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:3003"]
+      interval: 1m30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+    depends_on:
+      - redis
+      - mssql

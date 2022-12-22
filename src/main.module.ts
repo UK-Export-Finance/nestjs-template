@@ -11,25 +11,13 @@ dotenv.config();
   imports: [
     MdmModule,
     TypeOrmModule.forRoot({
-      name: 'default', // ms_sql_master_date
+      name: 'default',
       type: 'mssql',
-      url: process.env.DB_URL_MASTER_DATA,
-      extra: {
-        options: {
-          encrypt: true,
-          trustServerCertificate: true,
-        },
-      },
-      autoLoadEntities: true,
-      synchronize: false,
-    }),
-    TypeOrmModule.forRoot({
-      type: 'mysql',
       host: 'localhost',
-      port: 3306,
-      username: 'root',
-      password: '',
-      database: 'master_data',
+      port: 1433,
+      username: process.env.DB_USERNAME,
+      password: process.env.DB_PASSWORD,
+      database: process.env.DB_DATABASE,
       extra: {
         options: {
           encrypt: true,
@@ -40,19 +28,20 @@ dotenv.config();
       synchronize: false,
     }),
     MdmModule,
+
     ConfigModule.forRoot({
       isGlobal: true,
       load: [...config],
     }),
-    CacheModule.register({
-      isGlobal: true,
-      store: redisStore,
-      host: process.env.REDIS_HOST,
-      port: process.env.REDIS_PORT,
-      username: process.env.REDIS_USERNAME, // new property
-      password: process.env.REDIS_PASSWORD, // new property
-      no_ready_check: true, // new property
-    }),
+    // CacheModule.register({
+    //   isGlobal: true,
+    //   store: redisStore,
+    //   host: process.env.REDIS_HOST,
+    //   port: process.env.REDIS_PORT,
+    //   username: process.env.REDIS_USERNAME, // new property
+    //   password: process.env.REDIS_PASSWORD, // new property
+    //   no_ready_check: true, // new property
+    // }),
   ],
   controllers: [],
   providers: [],
