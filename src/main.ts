@@ -1,6 +1,8 @@
 import { VersioningType, ValidationPipe, Logger } from '@nestjs/common';
 import { NestFactory, NestApplication } from '@nestjs/core';
 import { ConfigService } from '@nestjs/config';
+import compression from 'compression';
+
 import { MainModule } from './main.module';
 import { TransformInterceptor } from './helpers';
 import { SwaggerDocs } from './swagger';
@@ -38,7 +40,17 @@ const main = async () => {
 
   // Swagger docs
   SwaggerDocs(app);
+
   app.useGlobalInterceptors(new TransformInterceptor());
+  app.use(compression({ filter: (req, res) => {
+    if (req.headers['x-no-compression']) {
+      // don't compress responses with this request header
+      return false
+    }
+
+    // fallback to standard filter function
+    return compression.filter(req, res)
+  } }))
 
   logger.log(`==========================================================`);
   logger.log(`NestJS app will serve on port ${port}`, 'NestApplication');
