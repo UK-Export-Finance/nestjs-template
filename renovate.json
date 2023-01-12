@@ -12,11 +12,6 @@
    "enabledManagers": ["dockerfile", "npm"],
    "dependencyDashboard": true, 
    "dependencyDashboardTitle": "Dependencies Dashboard (Renovate Bot)", 
-   "packageRules": [ 
-     {
-       "dependencyDashboardApproval": true 
-     } 
-   ],
    "groupName": "all",
    "rangeStrategy": "update-lockfile"
  }
