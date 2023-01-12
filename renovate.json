@@ -7,18 +7,17 @@
    ], 
    "internalChecksFilter": "strict", 
    "prConcurrentLimit": 4, 
-   "prHourlyLimit": 4, 
-   "updateNotScheduled": false, 
-   "enabledManagers": ["dockerfile", "npm"],
+   "prHourlyLimit": 4,
    "dependencyDashboard": true, 
    "dependencyDashboardTitle": "Dependencies Dashboard (Renovate Bot)", 
    "groupName": "all",
    "rangeStrategy": "update-lockfile",
    "packageRules": [
     {
+    "matchPackageNames": ["*"],
       "postUpgradeTasks": {
         "commands": [
-          "npm ci --legacy-peer-deps"
+          "npm install --legacy-peer-deps"
         ],
         "fileFilters": ["**/**"]
       }
