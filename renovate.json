@@ -4,14 +4,12 @@
      "config:base", 
      ":separateMultipleMajorReleases",
      ":semanticCommits"
-   ], 
-   "internalChecksFilter": "strict", 
+   ],
    "prConcurrentLimit": 4, 
    "prHourlyLimit": 4,
    "dependencyDashboard": true, 
    "dependencyDashboardTitle": "Dependencies Dashboard (Renovate Bot)", 
    "groupName": "all",
-   "rangeStrategy": "update-lockfile",
    "packageRules": [
     {
     "matchPackageNames": ["*"],
@@ -21,6 +19,14 @@
         ],
         "fileFilters": ["**/**"]
       }
+    },
+    {
+      "matchPackagePatterns": ["eslint"],
+      "groupName": "eslint"
+    },
+    {
+      "matchPackagePatterns": ["nestjs"],
+      "groupName": "nestjs"
     }
   ]
  }
