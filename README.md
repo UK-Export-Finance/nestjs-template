@@ -15,7 +15,7 @@
 - [x] Standardized Editor config
 - [x] Swagger based documentation
 - [x] Config based on ENV variables
-- [X] Automated API versioning (/v1)
+- [x] Automated API versioning `(/v1)`
 - [ ] Automated releases based on conventional commits
 - [ ] Automated version bumps based on commit messages
 - [ ] Configuration for Jest tests
@@ -26,9 +26,9 @@
 - [ ] Add Auth guards
 - [ ] Configure Compodoc
 - [ ] Add health checks
-- [ ] Add hot reloading for local Docker development 
+- [ ] Add hot reloading for local Docker development
 - [ ] Add security headers
-- [ ] Deployment pipelines 
+- [ ] Deployment pipelines
 
 ### Installation
 
@@ -60,7 +60,7 @@ $ npm run api-test
 ```
 
 ### Generating new resources
-To simplify the generation of new resources, you can use the boilerplate [CRUD](https://docs.nestjs.com/recipes/crud-generator) 
+To simplify the generation of new resources, you can use the boilerplate [CRUD](https://docs.nestjs.com/recipes/crud-generator)
 ```bash
 $ nest g resource users
 ```
