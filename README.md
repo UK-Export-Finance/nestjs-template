@@ -17,9 +17,9 @@
 - [x] Configuration for `Jest` tests
 - [x] Automated releases based on conventional commits
 - [x] Automated version bumps based on commit messages
+- [x] Add rate-limiting using `@nestjs/throttler`
 - [ ] Alias paths
 - [ ] CodeCov to analyse the test coverage
-- [ ] Add rate-limiting
 - [ ] Add logging using Pino.js
 - [ ] Add Auth guards
 - [ ] Configure Compodoc
