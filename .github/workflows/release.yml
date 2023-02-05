@@ -13,8 +13,13 @@ jobs:
         id: release
         with:
           release-type: node
-          package-name: uk-export-finance/mdm-api
-          changelog-types: '[{"type":"feat","section":"Features","hidden":false},{"type":"fix","section":"Bug Fixes","hidden":false},{"type":"chore","section":"Miscellaneous","hidden":false}]'
+          package-name: uk-export-finance
+          changelog-types: '[
+              { "type": "feat", "section": "Features", "hidden": false},
+              { "type": "fix", "section": "Bug Fixes", "hidden": false},
+              { "type": "chore", "section": "Miscellaneous", "hidden": false},
+              { "type": "docs", "section": "Documentation", "hidden": false}
+            ]'
           extra-files: |
             README.md
             CHANGELOG.md
