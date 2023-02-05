@@ -1,7 +1,7 @@
 import { Module } from '@nestjs/common';
 import { ConfigModule } from '@nestjs/config';
 import { MdmModule } from './modules/mdm.module';
-import { MsSqlDatabaseModule, RedisCacheModule } from './database';
+import { MsSqlDatabaseModule } from './database';
 import config from './config';
 
 @Module({
@@ -11,7 +11,6 @@ import config from './config';
       load: [...config],
     }),
     MsSqlDatabaseModule,
-    RedisCacheModule,
     MdmModule,
   ],
   controllers: [],
