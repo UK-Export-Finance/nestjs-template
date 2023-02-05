@@ -6,18 +6,15 @@ on:
 
 jobs:
   release:
-    name: Release a new version 🚀
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v3
-    - uses: actions/setup-node@v3
-      with:
-        node-version: '18'
-        cache: 'npm'
-    - name: Install modules
-      run: npm ci
-    - name: Release 🚀
-      run: npm run release
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        CI: true
+      - name: Release a new version 🚀
+        uses: google-github-actions/release-please-action@v3
+        id: release
+        with:
+          release-type: node
+          package-name: uk-export-finance/mdm-api
+          changelog-types: '[{"type":"feat","section":"Features","hidden":false},{"type":"fix","section":"Bug Fixes","hidden":false},{"type":"chore","section":"Miscellaneous","hidden":false}]'
+          extra-files: |
+            README.md
+            CHANGELOG.md
