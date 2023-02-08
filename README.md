@@ -18,9 +18,9 @@
 - [x] Automated releases based on conventional commits
 - [x] Automated version bumps based on commit messages
 - [x] Add rate-limiting using `@nestjs/throttler`
+- [x] Add logging using Pino.js
 - [ ] Alias paths
 - [ ] CodeCov to analyse the test coverage
-- [ ] Add logging using Pino.js
 - [ ] Add Auth guards
 - [ ] Configure Compodoc
 - [ ] Add health checks
@@ -62,6 +62,17 @@ To simplify the generation of new resources, you can use the boilerplate [CRUD](
 
 ```bash
 nest g resource users
+```
+
+### Writing logs using PinoJS
+
+```bash
+# error
+this.logger.error({ id: 'your message here' }, 'context-name');
+
+# log
+this.logger.log({ id: 'your message here' }, 'context-name');
+
 ```
 
 ### Writing Conventional Commits

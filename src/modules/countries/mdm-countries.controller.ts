@@ -1,4 +1,4 @@
-import { Controller, Get, Version, CacheInterceptor, UseInterceptors } from '@nestjs/common';
+import { Controller, Get, Version } from '@nestjs/common';
 import { ApiBearerAuth, ApiResponse, ApiTags } from '@nestjs/swagger';
 import { MdmCountriesService } from './mdm-countries.service';
 import { MdmCountryEntity } from './entities/mdm-country.entity';
@@ -9,7 +9,6 @@ import { MdmCountryEntity } from './entities/mdm-country.entity';
 export class MdmCountriesController {
   constructor(private readonly countryService: MdmCountriesService) {}
 
-  @UseInterceptors(CacheInterceptor)
   @Get()
   @Version('1')
   @ApiResponse({
