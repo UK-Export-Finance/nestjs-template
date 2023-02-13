@@ -1,10 +1,10 @@
 import { Module } from '@nestjs/common';
 import { ConfigModule } from '@nestjs/config';
 import { ThrottlerModule } from '@nestjs/throttler';
+import config from '@ukef/config';
+import { MsSqlDatabaseModule } from '@ukef/database';
+import { MdmModule } from '@ukef/module/mdm.module';
 import { LoggerModule } from 'nestjs-pino';
-import { MdmModule } from './modules/mdm.module';
-import { MsSqlDatabaseModule } from './database';
-import config from './config';
 
 @Module({
   imports: [

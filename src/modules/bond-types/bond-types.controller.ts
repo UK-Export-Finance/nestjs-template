@@ -1,5 +1,6 @@
 import { Controller, Get, Version } from '@nestjs/common';
 import { ApiBearerAuth, ApiResponse, ApiTags } from '@nestjs/swagger';
+
 import { BondTypeService } from './bond-types.service';
 import { BondTypeEntity } from './entities/bond-types.entity';
 

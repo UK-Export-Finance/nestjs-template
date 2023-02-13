@@ -1,6 +1,6 @@
+import { ClassSerializerInterceptor, UseInterceptors } from '@nestjs/common';
 import { ApiProperty } from '@nestjs/swagger';
 import { Column, Entity, PrimaryGeneratedColumn } from 'typeorm';
-import { ClassSerializerInterceptor, UseInterceptors } from '@nestjs/common';
 
 @Entity({
   name: 'country',

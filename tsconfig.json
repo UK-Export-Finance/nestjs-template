@@ -1,4 +1,5 @@
 {
+  "extends": "@tsconfig/node18/tsconfig.json",
   "compilerOptions": {
     "module": "commonjs",
     "declaration": true,
@@ -21,6 +22,14 @@
     "esModuleInterop": true,
     "moduleResolution": "node",
     "lib": ["ES2015"],
+    "paths": {
+      "@ukef/*": ["src/*"],
+      "@ukef/config/*": ["src/config/index"],
+      "@ukef/database/*": ["src/database/index"],
+      "@ukef/helpers/*": ["src/helpers/*"],
+      "@ukef/module/*": ["src/modules/*"],
+      "@ukef/swagger/*": ["src/swagger/*"]
+    }
   },
   "include": [
     "src",
