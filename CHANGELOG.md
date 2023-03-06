@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.1.1](https://github.com/UK-Export-Finance/nestjs-template/compare/v1.1.0...v1.1.1) (2023-03-06)
+
+
+### Miscellaneous
+
+* **deps:** update dependency jest to v29.4.3 ([#27](https://github.com/UK-Export-Finance/nestjs-template/issues/27)) ([dc637a3](https://github.com/UK-Export-Finance/nestjs-template/commit/dc637a34dabea2d5fe43a82c05e53d7f82440ed8))
+* **deps:** updated all npm packages ([cb6e35f](https://github.com/UK-Export-Finance/nestjs-template/commit/cb6e35faf368a1c8c17251c9775ef405287ff01a))
+
 ## [1.1.0](https://github.com/UK-Export-Finance/nestjs-template/compare/v1.0.1...v1.1.0) (2023-02-13)
 
 
