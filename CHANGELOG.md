@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.2](https://github.com/UK-Export-Finance/nestjs-template/compare/v1.1.1...v1.1.2) (2023-03-11)
+
+
+### Miscellaneous
+
+* **deps:** update all NPM packages ([7d7725e](https://github.com/UK-Export-Finance/nestjs-template/commit/7d7725ed1fe7b266e753a068b5f553123e5bf38f))
+
 ## [1.1.1](https://github.com/UK-Export-Finance/nestjs-template/compare/v1.1.0...v1.1.1) (2023-03-06)
 
 
