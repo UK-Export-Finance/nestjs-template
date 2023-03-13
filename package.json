@@ -37,7 +37,7 @@
     "mssql": "^9.1.1",
     "nestjs-pino": "^3.1.2",
     "pino-http": "^8.3.3",
-    "pino-pretty": "^9.4.0",
+    "pino-pretty": "^10.0.0",
     "reflect-metadata": "^0.1.13",
     "rxjs": "^7.8.0",
     "swagger-themes": "^1.2.28",
