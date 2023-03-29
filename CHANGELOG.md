@@ -1,5 +1,33 @@
 # Changelog
 
+## [1.1.2](https://github.com/UK-Export-Finance/nestjs-template/compare/v1.1.1...v1.1.2) (2023-03-24)
+
+
+### Bug Fixes
+
+* **deps:** update dependency pino-pretty to v10 ([24c74a2](https://github.com/UK-Export-Finance/nestjs-template/commit/24c74a2cc857bd46b12a7ae51ff832c09b2ab458))
+* **deps:** update dependency pino-pretty to v10 ([#31](https://github.com/UK-Export-Finance/nestjs-template/issues/31)) ([0aea4f8](https://github.com/UK-Export-Finance/nestjs-template/commit/0aea4f808eaedf1e02aee5d63bbbaa3f6931fe48))
+* **deps:** update dependency typescript to v5 ([ce8c0d6](https://github.com/UK-Export-Finance/nestjs-template/commit/ce8c0d69b769b8d70874ceec39d4fd22c9e1d99b))
+* **deps:** update dependency typescript to v5 ([#37](https://github.com/UK-Export-Finance/nestjs-template/issues/37)) ([35152d9](https://github.com/UK-Export-Finance/nestjs-template/commit/35152d98824675c62f382d5b669d8c6df5616469))
+* **deps:** update nest monorepo to v9.3.12 ([e60a59f](https://github.com/UK-Export-Finance/nestjs-template/commit/e60a59f685b2570fc7aea74f7d10fe260d6c1078))
+* **deps:** update nest monorepo to v9.3.12 ([#33](https://github.com/UK-Export-Finance/nestjs-template/issues/33)) ([d1af81f](https://github.com/UK-Export-Finance/nestjs-template/commit/d1af81f47938bf07d96a35ae47b7947017e39563))
+
+
+### Miscellaneous
+
+* **deps:** update all ([5de8e82](https://github.com/UK-Export-Finance/nestjs-template/commit/5de8e82358a58a0af3535f330cf689f1ddbed198))
+* **deps:** update all ([#32](https://github.com/UK-Export-Finance/nestjs-template/issues/32)) ([50b6570](https://github.com/UK-Export-Finance/nestjs-template/commit/50b65705f778c568c272f135fcdd9b8ff8d4dba7))
+* **deps:** update all NPM packages ([7d7725e](https://github.com/UK-Export-Finance/nestjs-template/commit/7d7725ed1fe7b266e753a068b5f553123e5bf38f))
+* **deps:** update dependency @commitlint/cli to v17.5.0 ([8986813](https://github.com/UK-Export-Finance/nestjs-template/commit/8986813a17c8dcbed7ccbb699f39c08c46f60e7d))
+* **deps:** update dependency @commitlint/cli to v17.5.0 ([#35](https://github.com/UK-Export-Finance/nestjs-template/issues/35)) ([03546af](https://github.com/UK-Export-Finance/nestjs-template/commit/03546af18323e44b565a58d8a32e677e7aaa79de))
+* **deps:** update dependency @types/jest to v29.5.0 ([c8c5b54](https://github.com/UK-Export-Finance/nestjs-template/commit/c8c5b546c72da21016bcb40644f0e95037837c7a))
+* **deps:** update dependency @types/jest to v29.5.0 ([#29](https://github.com/UK-Export-Finance/nestjs-template/issues/29)) ([d196581](https://github.com/UK-Export-Finance/nestjs-template/commit/d196581a20313aa3ea6fe7ccc8b0106bdc7217b6))
+* **deps:** update dependency @types/node to v18.15.6 ([#38](https://github.com/UK-Export-Finance/nestjs-template/issues/38)) ([3d749aa](https://github.com/UK-Export-Finance/nestjs-template/commit/3d749aa75d718e77c043f3076ab9d92b9a3cf47f))
+* **deps:** update typescript-eslint monorepo to v5.56.0 ([9e6b748](https://github.com/UK-Export-Finance/nestjs-template/commit/9e6b748d344bc52249e2a25930f405aa92fb55c1))
+* **deps:** update typescript-eslint monorepo to v5.56.0 ([#34](https://github.com/UK-Export-Finance/nestjs-template/issues/34)) ([aad3007](https://github.com/UK-Export-Finance/nestjs-template/commit/aad300793f1adcb744c68eb37c3a509d69fd498e))
+* **main:** release 1.1.2 ([5777022](https://github.com/UK-Export-Finance/nestjs-template/commit/5777022b434b98e0a429022b91b141067d8cb10b))
+* **main:** release 1.1.2 ([#30](https://github.com/UK-Export-Finance/nestjs-template/issues/30)) ([8af3da0](https://github.com/UK-Export-Finance/nestjs-template/commit/8af3da0a07b30ade6d081099267cab7fc9f5b55a))
+
 ## [1.1.2](https://github.com/UK-Export-Finance/nestjs-template/compare/v1.1.1...v1.1.2) (2023-03-23)
 
 
