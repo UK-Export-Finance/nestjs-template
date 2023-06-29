@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.4](https://github.com/UK-Export-Finance/nestjs-template/compare/v1.1.3...v1.1.4) (2023-06-29)
+
+
+### Miscellaneous
+
+* **deps:** update all ([#58](https://github.com/UK-Export-Finance/nestjs-template/issues/58)) ([ade455f](https://github.com/UK-Export-Finance/nestjs-template/commit/ade455f826ee2a430161b7f99d44939e76158aae))
+
 ## [1.1.3](https://github.com/UK-Export-Finance/nestjs-template/compare/v1.1.2...v1.1.3) (2023-05-01)
 
 
